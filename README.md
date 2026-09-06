@@ -11,7 +11,7 @@ Because I WAS NEVER GOING TO KNOW IF I COULD IF I NEVER AT LEAST TRIED.  This is
 
 And so I decided this wouldn't be me.  I want to take my shot.  My smallest worry is what prodeuct eventually surfaces from all this.  Will it even be playable, let alone fun?  I'm hoping so.  I believe that with my decade plus of being as much of a sponge as possible has prepared me for this.  And for myself, I won't use any generative AI.  I have discovered that it can at least be used as a Hall of Fame search aggregator.
 
-/h2/"So what's next"/h2/
+##So what's next
 
 So I have completed what I consider a "game loop".  This means that it can launch, enemies and players alike can be destroyed, there is an end game state, and it can be quit.  But, there isn't really a game.  Just some proof to myself that I could do a thing.  However, I do believe I'm now in a psoition to make it a game.  I have a couple of programming issues which I will be visiting the solutions for once I have them.   Over the last few days, I have implemented functionality that will allow me to add mobs in a modular fashion.  So this upcoming week is MOB WEEK.  I will be spending the week doing additional art/logic for mobs.  
 
