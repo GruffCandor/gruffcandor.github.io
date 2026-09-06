@@ -7,4 +7,4 @@ plugins:
 title: [Gruff's Candor]
 tagline: [Rantings of a Mad Dev]
 description: [Sometimes I Talk About My Journey]
-show_downloads: [false]
+show_downloads: false
