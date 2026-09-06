@@ -1,4 +1,4 @@
-# Somehwere to Start 9/6/26
+# Somehwere to Start - 9/6/26
 
 
 So I guess I should start somewhere.  If anybody knows me, its most likely as a nutty old dude that pops up on Twitch and Youtube every once in awhile.  While this has been sufficient to a degree in filling my time, I have found that I start to go a little batty if I'm not creating.  That's not to say that streaming or making videos isn't creating, because it certainly is.  And I do plan on venturing back that way soon.  However, a void continued to reside in my thoughts.  I knew that, deep down, I wasn't making my own brain go "brrrr".  I had reached this mental euphoria in the past.  I knew it was attainable.  So I set out to rectify this problem and have landed back with an old friend, game development.  I had walked away, happily I might add, from game dev a few years ago.  I always seemed to have the same roadblocks during my dev process.  I was never happy enough with the music, even though I do consider myself at least a serviceable musician.  I was never elated with my art, even though games are released everyday that don't hold a candle to my stickpersons.
