@@ -5,7 +5,7 @@ So I guess I should start somewhere.  If anybody knows me, its most likely as a 
 
 And then there's the giant elephant in the room, let's call her Claudette.  I'm an artist.  At least that's what I've always told people to excuse my less than stellar offerings.  How am I ever supposed to get out my masterpieces now when someone is constantly wanting to hold my brushes for me.  I thought creating the parts for my game without a robots help would be easy, but the most difficult task has ended up finding tools that don't get touched by AI whatsoever.  This all just ended up being a basket of excuses. 
 
-Because I WAS NEVER GOING TO KNOW IF I COULD IF I NEVER AT LEAST TRIED.  This is a lesson we're taught a pretty early age, right?  
+Because **I WAS NEVER GOING TO KNOW IF I COULD IF I NEVER AT LEAST TRIED.**  This is a lesson we're taught a pretty early age, right?  
 
 "You miss 100% of the shots you don't take" -  Gretzky or Scott or whoever
 
