@@ -1,3 +1,36 @@
+# A Fruitful Week
+
+Well it certainly has been a productive week (hence, my delay in writing this)!  I promised mobs and ended with so much more.  My plab was to add a couple of extra enemies for protoyping.  I was thinking that I would make enough to complete a short, but satisfying game loop.  This would include some escalating difficulty, as well as additional enemy mechanics (like shooting bullets), and a BOSS.  Not only did I complete the short list of mobs, but I was also able to loosely tie them together to create a rudimentary game loop.
+
+Now, I'm sure there are plenty of bugs I'm just not seeing yet.  I did find myself rushing through some of the building once I could "see the light" and I can guarantee there are mistakes that will come back to haunt me.  But, as we all know, "It works!" should always be the first real celebrated milestone and I feel like I've at least made it that far.
+
+Anyway...  I promised some mobs so let's focus on those for a bit.  Keep in mind that while the art I share is placeholder, it still stays in the project spirit of NOT being AI generated.  I do apologize in advance for its obtrusive ugliness.
+
+I started the project with two simple enemies:
+
+![Bruiser](../assets/images/enemyship.png)          ![Scout](../assets/images/spottedmob.png) 
+
+The code for these enemies and their behavior are pulled directly from the Godot 2D Tutorial thats provided in the documentation.  In fact, I completed the tutorial first and I continue to modify that same project (long story... different day perhaps).  For the first two enemies, I simply changed the speed and gave it a "faster looking" sprite.  But now, I had a list of enemies that was only going to grow larger and I needed a way to organize.  This led me to constructing an array to store my mob scenes in, but also I think I may have experienced my first real Godot hiccup.  For some reason, the engine did not really agree with declaring the array at the head of the script.  Because of this, I was not able to "drop" the needed scenes into the array.  I toiled with this issue for a couple days and eventually resolved it by just closing the scene and reopening once I had declared the array.  It makes sense that saving the scene would have sufficed, but the extra step was needed.
+
+Either way, I now had the architecture I needed to house all manner of enemies I could muster.  So my next hurdle was to create a stationary mob that would shoot at the player.  This presented to problems to solve: the stationary enemy and its bullet.  
+
+![Sentry](../assets/images/eyesentry3.png)        ![Sentry Bullet](../assets/images/sentrybullet.png) 
+
+The stationary part was easy, just zero out the speed variable.  Done.  For firing, I called a new animated sprite that made it appear an "eye" was opening prior to the bullet being shot (pictured above).  The bullet, itself, ended up being a little more trouble than I had anticipated.  The bullet getting caught on every single body in the scene, or its parent, or having its physics wildy adjusted for no apparent reason taught me loads about layers and collision masks.  I was then able to apply what I learned here to my final enemy.
+
+
+The BOSS:
+
+<img src="{{ site.baseurl }}/assets/images/boss_ship1C.png" alt="Description" width="128" height="128">
+
+For the boss, I wanted something new.  I didn't want it to spawn or move off-screen.  Because of this, I made a random path for the boss to follow.  I achieved this by placing several markers around the boss scene and having the boss pick a random marker every few seconds and move to it.  Then, I employed the same "bullet firing" technology that I was using for the sentry, allowing for something that looks similar to a carrier deplying ships.  I used the scouts from earlier as the player should understand these are fast moving ships that should be avoided.  
+
+During testing of all these wonderful enemies and how to properly spawn them, it seemed increasingly necessary to cobble together some sort of progession so I could see it all play out.  Because of this, I essentially completed some basic progression through increasingly difficult enemies which ends in a score screen.  I think some may call that an actual game loop.  But we aren't there yet and I'll be talking about that game loop and leveling system in the next dev log.  Thaks for reading!
+
+
+- Gruff
+
+
 # Somehwere to Start - 9/6/26
 
 
