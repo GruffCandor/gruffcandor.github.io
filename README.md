@@ -8,20 +8,20 @@ Anyway...  I promised some mobs so let's focus on those for a bit.  Keep in mind
 
 I started the project with two simple enemies:
 
-![Bruiser](../assets/images/enemyship.png)          ![Scout](../assets/images/spottedmob.png) 
+<img src="assets/enemyship.png" alt="1st Enemy Ship" width="56" height="56">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spottedmob.png" alt="2nd Enemy Ship" width="56" height="56">
 
 The code for these enemies and their behavior are pulled directly from the Godot 2D Tutorial thats provided in the documentation.  In fact, I completed the tutorial first and I continue to modify that same project (long story... different day perhaps).  For the first two enemies, I simply changed the speed and gave it a "faster looking" sprite.  But now, I had a list of enemies that was only going to grow larger and I needed a way to organize.  This led me to constructing an array to store my mob scenes in, but also I think I may have experienced my first real Godot hiccup.  For some reason, the engine did not really agree with declaring the array at the head of the script.  Because of this, I was not able to "drop" the needed scenes into the array.  I toiled with this issue for a couple days and eventually resolved it by just closing the scene and reopening once I had declared the array.  It makes sense that saving the scene would have sufficed, but the extra step was needed.
 
 Either way, I now had the architecture I needed to house all manner of enemies I could muster.  So my next hurdle was to create a stationary mob that would shoot at the player.  This presented to problems to solve: the stationary enemy and its bullet.  
 
-![Sentry](../assets/images/eyesentry3.png)        ![Sentry Bullet](../assets/images/sentrybullet.png) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/eyesentry3.png" alt="Sentry" width="64" height="64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/sentrybullet.png" alt="Sentry Bullet" width="36" height="36">  
 
 The stationary part was easy, just zero out the speed variable.  Done.  For firing, I called a new animated sprite that made it appear an "eye" was opening prior to the bullet being shot (pictured above).  The bullet, itself, ended up being a little more trouble than I had anticipated.  The bullet getting caught on every single body in the scene, or its parent, or having its physics wildy adjusted for no apparent reason taught me loads about layers and collision masks.  I was then able to apply what I learned here to my final enemy.
 
 
 The BOSS:
 
-<img src="{{ site.baseurl }}/assets/images/boss_ship1C.png" alt="Description" width="128" height="128">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/boss_ship1C.png" alt="Carrier Boss" width="128" height="128">
 
 For the boss, I wanted something new.  I didn't want it to spawn or move off-screen.  Because of this, I made a random path for the boss to follow.  I achieved this by placing several markers around the boss scene and having the boss pick a random marker every few seconds and move to it.  Then, I employed the same "bullet firing" technology that I was using for the sentry, allowing for something that looks similar to a carrier deplying ships.  I used the scouts from earlier as the player should understand these are fast moving ships that should be avoided.  
 
